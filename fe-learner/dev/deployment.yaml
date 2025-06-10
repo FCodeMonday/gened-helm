@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: gened-fe-learner-container
-          image: 
+          image: ghcr.io/fcodemonday/poc-action:latest
           ports:
             - containerPort: 3000
