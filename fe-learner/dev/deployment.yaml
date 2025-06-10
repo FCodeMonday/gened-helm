@@ -4,7 +4,7 @@ metadata:
   name: gened-fe-learner-deployment
   namespace: gened-fe-dev
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: gened-fe-learner
@@ -14,9 +14,7 @@ spec:
         app: gened-fe-learner
     spec:
       imagePullSecrets:
-        - name: ghcr-secret 
+        - name: ghcr-secret
       containers:
         - name: gened-fe-learner-container
           image: ghcr.io/fcodemonday/poc-action:latest
-          ports:
-            - containerPort: 3000
