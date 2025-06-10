@@ -19,3 +19,10 @@ spec:
                 name: gened-fe-learner-service
                 port:
                   number: 80
+          - path: /_next/*
+            pathType: Prefix
+            backend:
+              service:
+                name: gened-fe-learner-service
+                port:
+                  number: 80
