@@ -13,14 +13,7 @@ spec:
       http:
         paths:
           - path: /?(.*)
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: gened-fe-learner-service
-                port:
-                  number: 80
-          - path: /_next/*
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: gened-fe-learner-service
