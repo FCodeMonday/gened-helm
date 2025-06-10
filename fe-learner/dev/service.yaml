@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gened-fe-learner-service
+  namespace: default
+spec:
+  selector:
+    app: gened-fe-learner-container
+  type: NodePort
+  ports:
+    - port: 3000
+      targetPort: 3000

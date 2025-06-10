@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gened-fe-learner-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gened-fe-learner
+  template:
+    metadata:
+      labels:
+        app: gened-fe-learner
+    spec:
+      containers:
+        - name: gened-fe-learner-container
+          image: 
+          ports:
+            - containerPort: 3000

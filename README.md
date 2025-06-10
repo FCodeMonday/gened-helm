@@ -1,1 +1,1 @@
-# gened-helm
+# GenEd Helm for ArgoCD
