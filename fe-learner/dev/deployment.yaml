@@ -13,7 +13,6 @@ spec:
       labels:
         app: gened-fe-learner
     spec:
-      hostNetwork: true
       imagePullSecrets:
         - name: ghcr-secret 
       containers:
