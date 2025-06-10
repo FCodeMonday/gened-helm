@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gened-fe-learner-deployment
-  namespace: gened-fe-learner
 spec:
   replicas: 1
   selector:
