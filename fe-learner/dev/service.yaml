@@ -6,7 +6,9 @@ metadata:
 spec:
   selector:
     app: gened-fe-learner-container
-  type: NodePort
+  type: ClusterIP
   ports:
-    - port: 3000
-      targetPort: 3000
+    - name: http
+      port: 3000
+      protocal: TCP
+      targetPort: http
